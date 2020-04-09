@@ -266,14 +266,16 @@ body {
     margin-bottom: 60px;
 }
 
-.services-title-box {
+.services-title-box ,
+.form-title-box{
     max-width: 520px;
     padding-left: 140px;
     position: relative;
    
 }
 
-.services-title-box:before {
+.services-title-box:before ,
+.form-title-box:before {
     content: "";
     background-color: #ffc222;
     width: 100px;
@@ -283,7 +285,8 @@ body {
     top: 10px;
 }
 
-.services-title {
+.services-title ,
+.form-title {
  font-size: 24px;
  font-weight: 500;
  line-height: 24px;
@@ -294,7 +297,8 @@ body {
 
 }
 
-.services-text {
+.services-text ,
+.form-title {
     letter-spacing: 0.1px;
     color: #5e5e5e;
 }
@@ -397,3 +401,81 @@ padding: 25px 0 45px 0;
 .about-btn.default-btn:after {
     color: #000;
 }
+
+
+/* FORM */
+
+.form {
+    padding-top: 40px;
+}
+
+.form-inner {
+    padding-bottom: 40px;
+    background-image: url(../img/form-fon.png);
+    min-height: 460px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.form-box {
+    max-width: 850px;
+    padding-top:45px;
+}
+
+.form-box-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-box-left {
+    max-width:260px;
+    width: 100%;
+}
+
+.form-box-right {
+    max-width:555px;
+    width: 100%;
+}
+
+.form-box-inner label ,
+.form-box-inner input ,
+.form-box-inner select,
+.form-box-inner textarea{
+    display: block;
+    width: 100%;
+}
+
+
+.form-box-inner label {
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+    line-height: 36px;
+}
+
+.form-box-inner input {
+    margin-bottom: 8px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    height: 40px;
+    padding: 0 10px;
+
+}
+
+.form-box-inner select {
+   
+    outline: none;
+    border: 1px solid #e6e6e6;
+   
+    background-color: transparent;
+    height: 40px;
+    padding-left: 17px;
+}
+
+.form-box-inner textarea {
+    border: 1px solid #e6e6e6;
+    height: 210px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+}
+
