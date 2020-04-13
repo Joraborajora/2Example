@@ -260,14 +260,16 @@ body {
     padding: 50px 0 30px 0 ;
 }
 
-.services-top {
+.services-top ,
+.news-top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
 
 .services-title-box ,
-.form-title-box{
+.form-title-box,
+.news-title-box{
     max-width: 520px;
     padding-left: 140px;
     position: relative;
@@ -275,7 +277,8 @@ body {
 }
 
 .services-title-box:before ,
-.form-title-box:before {
+.form-title-box:before ,
+.news-title-box:before{
     content: "";
     background-color: #ffc222;
     width: 100px;
@@ -286,7 +289,8 @@ body {
 }
 
 .services-title ,
-.form-title {
+.form-title ,
+.news-title {
  font-size: 24px;
  font-weight: 500;
  line-height: 24px;
@@ -298,12 +302,14 @@ body {
 }
 
 .services-text ,
-.form-title {
+.form-text,
+.news-text  {
     letter-spacing: 0.1px;
     color: #5e5e5e;
 }
 
-.services-btn a{
+.services-btn a,
+.news-btn a{
     color: #373636;
     line-height: 24px;
     letter-spacing: 0.25px;
@@ -558,4 +564,188 @@ padding: 25px 0 45px 0;
     float: right;
 }
 
+/* 
+advantages */
 
+.advantages {
+    min-height: 285px;
+    background-image: url(../img/adv-fon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 55px 0 40px;
+}
+
+.advantages-inner {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage-item {
+    max-width: 360px;
+    padding: 0 20px;
+}
+
+.advantage-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 60px 0 15px;
+    position: relative;
+}
+
+.advantage-title:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffc222;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+
+.advantage-title:after {
+    content: '\f00c';
+    font-family: 'icomoon';
+    font-size: 14px;
+    position: absolute;
+    top:10px;
+    left:50%;
+
+    transform: translateX(-50%);
+}
+
+
+.advantage-text {
+    line-height: 24px;
+    letter-spacing: 0.1;
+    color: #d3d2d3;
+}
+
+
+/* 
+NEWS */
+
+.news {
+    padding: 55px 0 110px;
+
+}
+
+.news-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-slider {
+    max-width: 555px;
+    width: 100%;
+    background-color: #fcfcfc;
+    box-shadow: 0 5px 15px 0.6px rgba(128,127,127,0.1);
+    padding: 60px 35px 45px 70px;
+    position: relative;
+
+}
+
+.news-slider:before {
+    content:'\f10e';
+    font-family: 'icomoon';
+    color: #fff;
+    background-color: #ffc222;
+    width: 65px;
+    height:30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    left: 70px;
+    top:0;
+    font-size: 16px;
+
+}
+
+
+.news-slider-title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #242424;
+    font-weight: 500;
+    font-family:  'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.news-slider-text {
+    margin-bottom: 30px;
+}
+
+.news-slider-author {
+    letter-spacing: 0.1px;
+    color: #212020;
+    font-weight: 500;
+    font-family:  'Roboto', sans-serif;
+}
+
+.news-blog {
+    max-width: 260px;
+    width: 100%;
+}
+
+.news-image {
+    position: relative;
+}
+
+.news-date {
+    position: absolute;
+    background-color: #ffc222;
+    height: 55px;
+    width: 50px;
+    top:-1px;
+    left: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+}
+
+.news-blog-title {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    color: #242424;
+    padding: 12px 0 ;
+}
+
+.news-blog-text {
+    letter-spacing: 0.1px;
+    color: #5e5e5e;
+}
+
+.news-slider-inner .slick-btn {
+    top: auto;
+    bottom: -110px;
+}
+
+.news-slider-inner .slick-next{
+    right: -35px;
+}
+.news-slider-inner .slick-prev {
+    left: auto;
+    right: 20px;
+}
+
+.news-slider-inner .slick-disabled {
+
+    color: #dadada;
+    border-color: #dadada;
+}
+
+.news-slider-inner .slick-disabled:before {
+
+    color: #dadada;
+   
+}
