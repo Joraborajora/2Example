@@ -439,7 +439,6 @@ padding: 25px 0 45px 0;
 
 .form-box-inner label ,
 .form-box-inner input ,
-.form-box-inner select,
 .form-box-inner textarea{
     display: block;
     width: 100%;
@@ -464,11 +463,84 @@ padding: 25px 0 45px 0;
 .form-box-inner select {
    
     outline: none;
-    border: 1px solid #e6e6e6;
-   
     background-color: transparent;
+    left:17px;
+}
+
+.form-box-inner .jq-selectbox.jqselect {
+    display: block;
+    width: 100%;
+}
+
+.form-box-inner .jq-selectbox__select {
     height: 40px;
     padding-left: 17px;
+    border: 1px solid #e6e6e6;
+  
+
+    
+}
+
+.form-box-inner .jq-selectbox__dropdown {
+   
+    width: 100%;
+    margin: 2px 0 0;
+    padding: 0;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.2);
+
+
+}
+
+.form-box-inner .jq-selectbox__dropdown li {
+    min-height: 18px;
+    padding: 5px 17px 6px;
+    color: #231f20;
+}
+
+.form-box-inner .jq-selectbox__dropdown li.selected {
+    background-color: #A4Abb1;
+    color: #fff;
+}
+
+.form-box-inner .jq-selectbox__dropdown li:hover {
+    background-color: #08c;
+    color: #fff;
+}
+
+.form-box-inner .jq-selectbox__dropdown li.disabled {
+    color: #fff;
+}
+
+.form-box-inner .jq-selectbox__dropdown li:hover {
+    background-color: none;
+} 
+
+.form-box-inner .jq-selectbox__dropdown li.optgroup {
+    font-weight: bold;
+}
+
+.form-box-inner .jq-selectbox__dropdown li.optgroup:hover {
+    background-color: none;
+    color: #231f20;
+    cursor: default;
+
+}
+
+.form-box-inner .jq-selectbox li.option {
+    padding-left: 25px;
+}
+
+
+.form-box-inner .jq-selectbox__trigger-arrow:after {
+    content: '\f105';
+    font-family: 'icomoon';
+    position: absolute;
+    right:17px;
+    top: 0;
+    transform: rotate(90deg);
+
 }
 
 .form-box-inner textarea {
@@ -477,5 +549,13 @@ padding: 25px 0 45px 0;
     padding: 10px;
     outline: none;
     resize: none;
+    margin-bottom: 40px;
 }
+
+.form-box-inner button{
+    background-color: transparent;
+    color: #282828;
+    float: right;
+}
+
 
