@@ -11,5 +11,9 @@ $(function (){
 
     $('select').styler();
 
+    $('.header-btn-menu').on('click',function(){
+        $('.menu ul').slideToggle();
+    });
+
 });
 

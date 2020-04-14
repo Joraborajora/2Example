@@ -766,14 +766,17 @@ NEWS */
     display: flex;
     justify-content: space-between;
 }
-/* 
-.footer-map iframe{
-    max-width: 630px;
-    height: 250px;
+
+.footer-map {
     width: 100%;
+    max-width: 630px;
+    padding-top: 10px;
 
-} */
+} 
 
+.footer-map iframe {
+    width: 100%;
+}
 
 .footer-title {
     font-family: 'Roboto', sans-serif;
@@ -867,4 +870,9 @@ NEWS */
 #modal input[type="submit"] {
     background-color: #ffc222;
     border: none;
+}
+
+.header-btn-menu{
+    display: none;
+    font-size: 28px;
 }
