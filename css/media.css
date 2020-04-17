@@ -152,7 +152,8 @@
         position: absolute;
         left: 0;
         right: 0;
-        margin-top: 20px;
+        margin-top: 25px;
+        z-index:1;
 
     }
 
